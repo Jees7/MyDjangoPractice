@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="sqlite_jdbc-15a5fdb33df-4af04d8d7f484b42" provider="generic" driver="sqlite_jdbc" name="SQLite - db.sqlite3" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="D:\MyProgramFiles\eclipse\workspace\MyDjangoPractice\db.sqlite3" url="jdbc:sqlite:D:\MyProgramFiles\eclipse\workspace\MyDjangoPractice\db.sqlite3" type="dev"/>
+	</data-source>
+</data-sources>

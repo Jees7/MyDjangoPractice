@@ -1,9 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}post_archive_year.html{% endblock %}
+
+{% block content %}
+<div id="content">
+
 <h1>Post Archives for {{ year|date:"Y" }}</h1>
 
 <ul>
     {% for date in date_list %}
     <li style="display: inline;">
-        <a href="{% url 'blog:post_month_archive' year|date:'Y' date|date:'b' %}">{{ date|date:"F" }}</a></li>
+        <a href="{% url 'blog:post_month_archive' year|date:'Y' date|date:'m' %}">{{ date|date:"F" }}</a></li>
     {% endfor %}
 </ul>
 <br/>
@@ -16,3 +23,6 @@
         {% endfor %}
     </ul>
 </div>
+
+</div>
+{% endblock %}

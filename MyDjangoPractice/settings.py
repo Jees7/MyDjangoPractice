@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
     'tagging.apps.TaggingConfig',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+# Disqus reply service
+DISQUS_WEBSITE_SHORTNAME = 'kpopidol'
+SITE_ID = 1 
